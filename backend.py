@@ -1,4 +1,8 @@
-# Busca esta parte y cámbiala exactamente así:
+from flask import Flask, request, jsonify, send_from_directory  # ESTA LÍNEA ES LA QUE FALTA
+from flask_cors import CORS
+import tensorflow as tf
+import numpy as np
+# ... el resto del código igual# Busca esta parte y cámbiala exactamente así:
 app = Flask(__name__, 
             static_folder='static/browser', 
             static_url_path='')
